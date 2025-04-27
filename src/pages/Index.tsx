@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Sparkles, Skull, TrendingUp } from "lucide-react";
 import NavBar from "@/components/NavBar";
 import CharacterCard from "@/components/CharacterCard";
@@ -133,10 +134,12 @@ const Index = () => {
               <p className="text-lg md:text-xl mb-6 text-gray-200 max-w-2xl">
                 Исследуйте мрачный мир легенд, страшилок и городских мифов через коллекцию самых известных персонажей
               </p>
-              <Button size="lg" className="w-fit animate-pulse">
-                <Sparkles className="mr-2 h-4 w-4" />
-                Создать персонажа
-              </Button>
+              <Link to="/create">
+                <Button size="lg" className="w-fit animate-pulse">
+                  <Sparkles className="mr-2 h-4 w-4" />
+                  Создать персонажа
+                </Button>
+              </Link>
             </div>
           </div>
 
